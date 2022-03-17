@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#join-form{
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+#text-join{
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 80px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.join-text{
+    width: 100px;
+    margin-top: 5px;
+    font-size:13px ;
+    font-weight:400;
+}
+#join-table{
+    width: 100%;
+}
+#join-table td{
+    height: 40px;
+}
+#join-table input[type=text] ,input[type=password]{
+width: 100%;
+height: 100%;
+}
+
+.warning-massege{
+    font-size: 11px;
+    padding-left: 125px;
+    height: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+input{
+border: 1px #C4C4C4;
+}
+
+#join-table button ,input[type=submit]{
+width: 100%;
+height: 100%;
+color: #3493E5;
+border: #3493E5;
+background-color: white;
+border-radius: 5px;
+font-weight: 900;
+}
+
+#birthDay{
+    color: gray;
+    text-align: center;
+}
+#all-areement{
+    border: 2px solid black;
+    height: 50px;
+}
+#all-areement-text{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+#all-areement-radio{
+    margin-top: 15px;
+    margin-left: 120px;
+}
+
+.areement-radio{
+    width: 20px;
+    height: 20px;
+    background-color: #C4C4C4;
+
+}
