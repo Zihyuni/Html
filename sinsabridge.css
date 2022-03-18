@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 #join-form{
@@ -81,18 +81,17 @@ font-weight: 900;
     font-weight: 600;
 }
 #all-areement-check{
-    margin-left: 160px;
-    
+    margin-left: 160px;   
 }
+
 .areement{
-    float: left;
     font-size: 13px;
     font-weight: bold;
 }
 .areement-check{
     width: 25px;
     height: 25px;
-
+    float: right;
 }
 
 #order-info{
@@ -104,8 +103,13 @@ font-weight: 900;
     font-size: 9px;
     font-weight: 900;
     color: #C4C4C4;
-    float: left;
+    float: right;
+    margin: 0%;
 }
+input[type=checkbox]+label{
+    margin-top: 20px;
+}
+
 #sms-email-areement{
     margin-left: -20px;
 }
