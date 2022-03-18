@@ -9,10 +9,13 @@
 </head>
 <body>
 
-    <div id="wrap">
+ 
 
     <header>
-
+            <h1 id="header-text">SINSA BRIDGE</h1>
+            <div id="nemo">
+                <p id="menu-text">MENU</p> 
+            </div>
     </header>
 
     <section>
@@ -21,87 +24,98 @@
         
     <table id="join-table">
         <tr>
-            <td class="join-text">아이디</td>
-            <td><input type="text" name="" id="" value="test0103"></td>
+            <td class="join-text"><label for="id">아이디</label></td>
+            <td><input type="text" name="id" id="id" value="test0103"></td>
             <td><button>중복확인</button></td>
         </tr>
         <tr>
-            <td colspan="3" class="warning-massege">이미 등록되어 있는 아이디입니다.</td>
+            <td colspan="3" class="warning-massege" id="id-warning-massege">이미 등록되어 있는 아이디입니다.</td>
         </tr>
         <tr>
-            <td class="join-text">비밀번호</td>
-            <td colspan="2"><input type="password" name="" id=""></td>        
+            <td class="join-text"><label for="pwd">비밀번호</label></td>
+            <td colspan="2"><input type="password" name="pwd" id="pwd" class="text"></td>        
         </tr>
         <tr>
-            <td colspan="3 class="warning-massege"영문,숫자,특수문자를 포함하여 8~20글자 이내로 작성해주세요.</td>
+            <td colspan="3" class="warning-massege" >영문,숫자,특수문자를 포함하여 8~20글자 이내로 작성해주세요.</td>
         </tr>
         <tr>
-            <td class="join-text">비밀번호 확인</td>
-            <td colspan="2"><input type="password" name="" id=""></td>  
+            <td class="join-text"><label for="pwdCheck">비밀번호 확인</label></td>
+            <td colspan="2"><input type="password" name="pwdCheck" id="pwdCheck" class="text"></td>  
         </tr>
         <tr>
             <td colspan="3" class="warning-massege">비밀번호를 확인을 위해 다시 입력해주세요.</td>
         </tr>
         <tr>
-            <td class="join-text">이름</td>
-            <td colspan="2"><input type="text" name="" id=""></td>
+            <td class="join-text"><label for="name">이름</label></td>
+            <td colspan="2"><input type="text" name="name" id="name"  class="text"id="name"></td>
         </tr>
         <tr>
-            <td class="join-text">생년월일</td>
-            <td colspan="2"><input type="text" name="" id="birthDay" value=" YYYY      /     MM      /         DD" ></td>
+            <td class="join-text"><lable for="birthDay">생년월일</lable></td>
+            <td colspan="2"><input type="text" name="" id="birthDay"  class="text"placeholder=" YYYY      /     MM      /         DD"></td>
         </tr>
         <tr>
-            <td class="join-text">휴대폰</td>
-            <td><input type="text" name="" id=""></td>
+            <td class="join-text"><label for="phone">휴대폰</label></td>
+            <td><input type="text" name="phone" id="phone" class="text"></td>
             <td><button>인증번호 받기</button></td>
         </tr>
     </table>
 
+
     <div id="all-areement">
-        <p id="all-파이"></p>
-        <label for="" id="all-areement-text">전체동의</label>
-        <input type="radio" name="" id="all-areement-radio" class="areement-radio">
+        <label for="all-areement-check" id="all-areement-text">전체동의</label>
+        <input type="checkbox" name="" id="all-areement-check" class="areement-check">
     </div>
 
     <div>
         <div>
-        <p>이용약관 동의</p>
-        자세히보기
-        <input type="radio" name="" id="" class="areement-radio">
+           
+            <label class="areement" for="use-agreement-check">이용약관 동의</label>
+          
+            <p class="show">자세히보기</p>
+            <input type="checkbox" name="" id="use-agreement-check" class="areement-check">
+         
         </div>
 
         <hr>
 
         <div>
-            <p>개인정보취급방침 동의</p>
-            자세히보기
-            <input type="radio" name="" id="" class="areement-radio">
+            <label class="areement" for="info-agreement-check">개인정보취급방침 동의</label>
+            <p class="show">자세히보기</p>
+            <input type="checkbox" name="" id="info-agreement-check" class="areement-check">
         </div>
         
         <hr>
 
         <div>
-            <p>정보수신 동의</p>
-            <input type="radio" name="" id="" class="areement-radio">
+            <label class="areement" for="reception-agreement-check">정보수신 동의</label>
+            <input type="checkbox" name="" id="reception-agreement-check" class="areement-check">
         </div>
 
-        <div>
-            <input type="radio" name="" id=""><label for="">SMS</label>
-            <input type="radio" name="" id=""><label for="">이메일</label>
-            <p>-주문 진행상태, 배송정보 등의 정보를 수신받을 수 있습니다.</p>
+        <div id="sms-email-areement">
+            <input type="checkbox" name="" id="sms"><label for="sms">SMS</label>
+            <input type="checkbox" name="" id="email"><label for="email">이메일</label>
+            <p id="order-info">-주문 진행상태, 배송정보 등의 정보를 수신받을 수 있습니다.</p>
         </div>
 
         <hr>
         <div>
-            <p>만 14세 이상입니다.</p>
-            <input type="radio" name="" id="" class="areement-radio">
+            <label  for ="age-areement-check" class="areement" id="age-areement-text">만 14세 이상입니다.</label>
+            <input type="checkbox" name="" id="age-areement-check" class="areement-check">
         </div>
     </div>
 
-    <input type="submit" value="가입하기">
+    
+    <input type="submit" value="가입하기" id="join-button">
     </div>
     </section>
-    <footer></footer>
-</div>
+    <footer>
+        
+        <div id="footer">
+            <h2 class="footer-text" id="footer-sinsa">SINSA BRIDGE</h2>
+            <p class="footer-text" id="footer-copy">Copyright 2022. sinsa bridge all rights reserved.</p></div>
+    </footer>
+
+
+
 </body>
 </html>
