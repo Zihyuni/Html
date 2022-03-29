@@ -100,7 +100,7 @@ span{
 .order-info{
     font-size: 8px;
     color: #3493E5;
-    margin-left: 60px;
+    text-align: left;
 }
 .show{
     font-size: 9px;
@@ -110,11 +110,11 @@ span{
     margin: 0%;
 }
 
-.sms-email-areement{
-    margin-left: -20px;
-}
+
 .sms-email-areement label{
-    margin-left: 5px;
+    margin-left: 20px;
+    position: relative;
+    top:4px;
     font-size: 12px;
     font-weight: 800;
 }
@@ -141,6 +141,15 @@ input[type=checkbox]{
 .mini_checkbox{
     width: 10px;
     height: 10px;
+    position: relative;
+    left: 20px;
+
+}
+
+.sms-checkbox{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 /*------------ footer ---------------*/
