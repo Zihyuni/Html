@@ -120,8 +120,29 @@ span{
 }
 
 input[type=checkbox]{
-display: none;
+    display: none;
 }
+
+.all-areement-text{
+    font-weight: 900;
+}
+
+.checkbox-i{
+    display: inline-block;
+    width: 20px; height: 20px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    background-color: #C4C4C4;
+    position: relative; 
+    top: 4px;
+    left: 170px;  
+}
+
+.mini_checkbox{
+    width: 10px;
+    height: 10px;
+}
+
 /*------------ footer ---------------*/
 
 
