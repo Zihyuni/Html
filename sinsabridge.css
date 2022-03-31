@@ -3,12 +3,12 @@
     /* border: 1px solid black; */
 }
 
-#join-form{
+.join-form{
     width: 470px;
     margin: auto;
     margin-top: 100px;
 }
-#text-join{
+.text-join{
     font-size: 1.2em;
     font-weight: 900;
     width: 80px;
@@ -75,27 +75,14 @@ font-weight: 900;
     text-align: center;
 }
 
-span{
-    position: relative;
-    font-weight: 600;
-}
-.all-areement input[type=checkbox] + label{
-    display: inline-block;
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    
-}
 
 .areement{
+    display: inline-block;
+    height: 30px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: bold;   
 }
-.areement-check{
-    width: 25px;
-    height: 25px;
-    float: right;
-}
+
 
 .order-info{
     font-size: 8px;
@@ -106,10 +93,17 @@ span{
     font-size: 9px;
     font-weight: 900;
     color: #C4C4C4;
-    float: right;
-    margin: 0%;
+    position: relative;
+    width: 50px;
 }
+.all-areement-text ::after{
+    display: block;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: #3493E5;
 
+}
 
 .sms-email-areement label{
     margin-left: 20px;
@@ -119,24 +113,24 @@ span{
     font-weight: 800;
 }
 
+/**************체크박스 변경***************/
 input[type=checkbox]{
     display: none;
 }
 
+input[type=checkbox] + label ::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border:1px solid black;
+    background-color: #3493E5;
+}
 .all-areement-text{
     font-weight: 900;
 }
 
-.checkbox-i{
-    display: inline-block;
-    width: 20px; height: 20px;
-    box-sizing: border-box;
-    border-radius: 10px; 
-    background-color: #C4C4C4;
-    position: relative; 
-    top: 4px;
-    left: 170px;  
-}
+
 
 .mini_checkbox{
     width: 10px;
@@ -152,10 +146,11 @@ input[type=checkbox]{
     margin-bottom: 10px;
 }
 
+/**************************************/
+
+
+
 /*------------ footer ---------------*/
-
-
-
 
 .footer{
     margin-top: 100px;
