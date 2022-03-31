@@ -47,7 +47,7 @@ footer{
     width: 190px;
 }
 
-span::after{
+.right-span::after{
     position: relative;
     content: " *";
     width: 10px;
@@ -76,9 +76,19 @@ span::after{
 }
 input[type=radio]{
     margin-left: 15px;
+    display: none;
 }
 .sex-label{
     margin-right: 30px;
+}
+.sex-label::before{
+    content: " ";
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid lightcoral;
+    width: 15px;
+    height: 15px;
 }
 .join-button{
     display: block;
@@ -105,3 +115,14 @@ input[type=radio]{
     color: gray;
     padding: 8px 5px;
 }
+.left-span::before{
+    content: "*";
+}
+
+.left-span{
+    font-size: 10px;
+}
+/* .id-span{
+display: none;
+} */
+
