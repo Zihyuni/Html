@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./html연습2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -25,22 +26,25 @@
                 <tr>
                     <th><span class="right-span">아이디</span></th>
                     <td class="m-td">
-                        <input type="text" class="text-box" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합">
+                        <a href="#" class="overlap-button id-check-button">중복확인</a>
+                        <input type="text" class="text-box" id="id-input" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합">
+                       
                         <div class="id-span">
                         <span class="left-span">6자 이상의 영문과 소문자를 조합하세요</span>
                         <br>
                         <span class="left-span">아이디 중복을 확인하세요</span>
+                       
                         </div>    
                     </td>
                     
-                    <td><a href="#" class="overlap-button">중복확인</a></td>
+                    <td></td>
                 
                 </tr>
 
                 <tr>
                     <th><span class="right-span">비밀번호</span></th>
                     <td class="m-td">
-                        <input type="password" class="text-box" placeholder="비밀번호를 입력해주세요">
+                        <input type="password" id="pwd-input" class="text-box" placeholder="비밀번호를 입력해주세요">
                         <div class="pwd-span">
                             <span class="left-span">영문과 특수문자 숫자 중 2가지를 조합하세요</span>
                             <br>
@@ -52,7 +56,7 @@
                 <tr>
                     <th><span class="right-span">비밀번호 확인</span></th>
                     <td class="m-td">
-                        <input type="password" class="text-box" placeholder="비밀번호를 한번 더 입력해주세요">
+                        <input type="password" id="pwd-check-input" class="text-box" placeholder="비밀번호를 한번 더 입력해주세요">
                         <div class="pwd-check-span">
                             <span class="left-span">위에 입력한 비밀번호랑 동일하게 입력하세요</span>
                         </div> 
@@ -89,13 +93,18 @@
 
                 <tr>
                     <th><span class="right-span">생년월일</span></th>
-                    <td class="m-td"><input type="text" class="text-box"></td>
+                    <td class="m-td">
+                        <input type="text" class="birthday YYYY" placeholder="YYYY"  maxlength="4">
+                       
+                        <input type="text" class="birthday MM" placeholder="MM" minlength="2" maxlength="2">
+                        <input type="text" class="birthday DD" placeholder="DD" maxlength="2">
+                    </td>
                 </tr>
                 
                 <tr>
                     <th rowspan="8"><span class="right-span">이용약관동의</span></th>
                 </tr>
-                    <td colspan="2"><p class="all-agreement-text">전체 동의합니다.</p>
+                    <td colspan="2"><p class="all-agreement-text agreement-text-checkbox">전체 동의합니다.</p>
                         <p class="notice-text">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
                     </td>
                     
@@ -103,19 +112,19 @@
             
                     <tr>
                     <td>
-                        <p>이용약관 동의(필수)</p>
+                        <p class="agreement-text-checkbox necessary">이용약관 동의</p>
                     </td>
                     </tr>
                 
                     <tr>
                         <td>
-                            <p>개인정보 수집·이용 동의(필수)</p>
+                            <p class="agreement-text-checkbox necessary">개인정보 수집·이용 동의</p>
                         </td>
                      </tr>
 
                      <tr>
                         <td>
-                            <p>본인은 만 14세 이상입니다.(필수)</p>
+                            <p class="agreement-text-checkbox  necessary">본인은 만 14세 이상입니다.</p>
                         </td>
                      </tr>
             </table>
@@ -131,5 +140,23 @@
 
         </footer>
     </div>
+
+    
+<script>
+
+$('#id-input').click(function() {
+    $(".id-span").show();
+})
+
+$('#pwd-input').click(function() {
+    $(".pwd-span").show();
+})
+
+$('#pwd-check-input').click(function() {
+    $(".pwd-check-span").show();
+})
+
+</script>
+
 </body>
 </html>

@@ -89,6 +89,13 @@ input[type=radio]{
     border: 2px solid lightcoral;
     width: 15px;
     height: 15px;
+    position: relative;
+    top: 2px;
+}
+.id-check-button{
+    position: relative;
+    right: -320px;
+    top: 30px;
 }
 .join-button{
     display: block;
@@ -101,6 +108,7 @@ input[type=radio]{
     color: white;
     font-size:15px;
     font-weight: 800;
+    cursor: pointer;
 }
 .all-agreement-text{
     font-size: 18px;
@@ -122,7 +130,56 @@ input[type=radio]{
 .left-span{
     font-size: 10px;
 }
-/* .id-span{
-display: none;
-} */
 
+.id-span , .pwd-span ,.pwd-check-span {
+    display: none;
+}
+
+input[type=radio]:checked + .sex-label::before{
+    background-color: coral;
+}
+
+
+.agreement-text-checkbox::before{
+content: "  ";
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 15px;
+border: 2px solid lightcoral;
+margin-right: 15px;
+position: relative;
+top: 5px;
+background-color: beige;
+}
+
+.necessary::after{
+    content: "(필수)";
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    color: salmon
+}
+.birthday{
+    float: left;
+    width: 98px;
+    height: 40px;
+    border:1px solid gray;
+    text-align: center;
+}
+.YYYY{
+    border-right: 0;
+    border-top-left-radius: 3px;
+}
+
+.YYYY::after{
+    content: "/";
+    color: black;
+}
+.MM{
+    border-left: 0;
+    border-right: 0;
+}
+.DD{
+    border-left: 0;
+}
