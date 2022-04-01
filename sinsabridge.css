@@ -53,6 +53,7 @@ background-color: white;
 border-radius: 5px;
 font-weight: 900;
 }
+
 .id{
     color: #C4C4C4;
     width: 100%;
@@ -114,30 +115,43 @@ font-weight: 900;
 }
 
 /**************체크박스 변경***************/
+
 input[type=checkbox]{
-    display: none;
+    position: relative;
+
 }
 
-input[type=checkbox] + label ::after{
+.areement-check::after{
     content: "";
     display: block;
     width: 20px;
     height: 20px;
-    border:1px solid black;
-    background-color: #3493E5;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    position: relative;
+    top:-999px;
+    right: 0px;
+    
 }
+
 .all-areement-text{
     font-weight: 900;
 }
 
+input[type=checkbox]{
+    position: relative;
+    bottom: -999px;
+}
 
-
-.mini_checkbox{
+.mini_checkbox::after{
+    content: "";
+    display: block;
     width: 10px;
     height: 10px;
+    border-radius: 10px;
+    background-color: #C4C4C4;
     position: relative;
-    left: 20px;
-
+    top: -999px;
 }
 
 .sms-checkbox{
