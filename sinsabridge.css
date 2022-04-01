@@ -97,17 +97,11 @@ font-weight: 900;
     position: relative;
     width: 50px;
 }
-.all-areement-text ::after{
-    display: block;
-    content: " ";
-    width: 20px;
-    height: 20px;
-    background-color: #3493E5;
 
-}
+
 
 .sms-email-areement label{
-    margin-left: 20px;
+    margin-left: 5px;
     position: relative;
     top:4px;
     font-size: 12px;
@@ -118,7 +112,10 @@ font-weight: 900;
 
 input[type=checkbox]{
     position: relative;
+}
 
+label{
+    width: 100%;
 }
 
 .areement-check::after{
@@ -130,8 +127,13 @@ input[type=checkbox]{
     background-color: #C4C4C4;
     position: relative;
     top:-999px;
-    right: 0px;
-    
+    right: -430px;
+}
+
+.all-areement-checkbox::after{
+    position: relative;
+    right: -220px;
+    top: -1000px;
 }
 
 .all-areement-text{
@@ -151,7 +153,8 @@ input[type=checkbox]{
     border-radius: 10px;
     background-color: #C4C4C4;
     position: relative;
-    top: -999px;
+    top: -993px;
+   
 }
 
 .sms-checkbox{
