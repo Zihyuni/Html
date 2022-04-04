@@ -22,6 +22,9 @@
     font-size:13px ;
     font-weight:400;
 }
+.id:hover{
+    border: 1px solid gray;
+}
 .join-table{
     width: 100%;
     border-spacing: 10px;
@@ -52,8 +55,12 @@ border: 1px solid #3493E5;
 background-color: white;
 border-radius: 5px;
 font-weight: 900;
+cursor: pointer;
 }
-
+.button:hover{
+    border: 1px solid salmon;
+    color: salmon;
+}
 .id{
     color: #C4C4C4;
     width: 100%;
@@ -78,10 +85,11 @@ font-weight: 900;
 
 
 .areement{
-    display: inline-block;
+    display: flex;
     height: 30px;
     font-size: 13px;
     font-weight: bold;   
+    align-items: center;
 }
 
 
@@ -89,16 +97,21 @@ font-weight: 900;
     font-size: 8px;
     color: #3493E5;
     text-align: left;
+  
 }
 .show{
     font-size: 9px;
     font-weight: 900;
     color: #C4C4C4;
     position: relative;
-    width: 50px;
+    width: 80px;
 }
 
-
+/**************div 양쪽 끝 정렬 ***************/
+.agreement-div{
+    display: flex;
+    justify-content :space-between
+}
 
 .sms-email-areement label{
     margin-left: 5px;
@@ -127,7 +140,7 @@ label{
     background-color: #C4C4C4;
     position: relative;
     top:-999px;
-    right: -430px;
+    right: 10px;
 }
 
 .all-areement-checkbox::after{
@@ -209,6 +222,9 @@ input[type=checkbox]{
     left: 90%;
     top: 4%;
 }
+.nemo:hover{
+    transform:scale(2)
+}
 .menu-text{
     font-weight: 900;
     margin-top: 15px;
@@ -224,8 +240,13 @@ input[type=checkbox]{
     color: white;
     background: linear-gradient(to right, #3493E5, #EC6EAD);
     border: 0ch;
+    cursor: pointer;
 }
 
+.join-button:hover{
+    background: #EC6EAD;
+}
 input[type=radio]{
     background-color: #3493E5;
 }
+
