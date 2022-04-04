@@ -19,7 +19,10 @@ header h1{
 }
 nav{
     height: 5%;
+    width: 100%;
     padding: 0%;
+    position: absolute;
+    z-index: 1;
 }
 a{
     text-decoration: none;
@@ -48,6 +51,8 @@ nav ul{
     background-color: wheat;
 }
 .Sub-Menu{
+    position: relative;
+    z-index: 999;
     display: none;
     border-bottom: 1px solid gray;
 }
@@ -56,24 +61,22 @@ nav ul{
     display:block;
 }
 
-.slide-img{
-    display: block;
-    margin:auto;
-    width: 80%;
-    height: 300px;
-    float: left;
+.beaner{
+    margin: auto;
+    margin-top: 120px;
+    width: 1200px;
+    overflow: hidden;
 }
-
 .slide-bar{
     margin: auto;
-    position: relative;
-    width: 80%;
+    width: 3600px;
     height: 250px;
+    position: relative;
 }
 .slide-img{
-   position: relative;
-    width: 100%;
+    width: 1200px;
     height: 250px;
+    float: left;
 }
 
 .slide-img img{
