@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./계산기만들기연습.css">
+</head>
+<body>
+    <div class="calc">
+
+        <table class="calc-table">
+            <tr class="screen"> 
+                <td colspan="4">
+                    <span class="screen-opreator"></span>                </td>
+            </tr>
+            
+            <tr class="button-base">
+                <td class="operator">%</td>
+                <td class="clear">C</td>
+                <td>del</td>
+                <td class="operator">/</td>
+            </tr>
+
+            <tr class="button-base">
+                <td class="number">7</td>
+                <td class="number">8</td>
+                <td class="number">9</td>
+                <td class="operator">*</td>
+            </tr>
+
+            <tr class="button-base">
+                <td class="number">4</td>
+                <td class="number">5</td>
+                <td class="number">6</td>
+                <td class="operator">+</td>
+            </tr>
+
+            <tr class="button-base">
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">3</td>
+                <td class="operator">-</td>
+            </tr>
+
+            <tr class="button-base">
+                <td>0</td>
+                <td>.</td>
+                <td colspan="2">=</td>
+            </tr>
+
+
+        </table>
+
+    </div>
+
+    <script>
+        // let  num1 ="";
+        // //num1은 처음 입력한 숫자
+        // let  num2 ="";
+        // //num2는 두번째 입력한 숫자
+        // let operator = document.querySelector('.operator');
+        // //operator에는 실제로 버튼에 눌린 사칙연산 기호의 값이 나오고
+        // const viewOperator = document.querySelector('.screen-operator');
+        // //viewOperator에는 화면에 보여줄 사칙연산 기호를 나타낸다.
+        // const viewResult = document.querySelector('.screen-result');}
+
+
+        function calc(num1 , operator , num2){
+            let result = 0;
+
+            if(operator === '+'){
+                result = Number(num1) + Number(num2);
+            }else if(operator === '-'){
+                result = Number(num1) - Number(num2);
+            }else if(operator === '*'){
+                result = Number(num1) * Number(num2);
+            }if(operator === '/'){
+                result = Number(num1) / Number(num2);
+            }
+            return String(result);
+
+        }
+    
+    </script>
+</body>
+</html>

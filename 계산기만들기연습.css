@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body{
+    margin: auto;
+    width: 1200px;
+    height: 1000px;
+}
+.calc{
+    width: 100%;
+    height: 100%;
+}
+
+.calc-table{
+    position: relative;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    border: 5px solid palevioletred;
+    border-spacing: 0;
+    font-weight: 800;
+    font-size: 17px;
+    color: purple;
+}
+.calc-table td{
+    width: 30px;
+    height: 10px;
+    border: 1px solid palevioletred;
+    
+}
+.screen{
+    height: 40px;
+    background-color: rgb(191, 220, 232);
+    border: 0px;
+}
+.button-base td{
+background-color:mistyrose
+}
+
+.screen-calc{
+    float: right;
+    border: 0;
+}
