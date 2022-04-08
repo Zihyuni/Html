@@ -11,11 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-            <h1>당근마켓</h1>
+        <div class="title">
+            <p>당근마켓</p>
+        </div>
     </header>
+
     <nav>
+
         <ul>
             <li class="Main-Category"><a href="#">물건팔기</a>
                 <ul>
@@ -51,8 +56,8 @@
         <div class="beaner">
             <div class="slide-bar">
                 <div class="slide-img slide-img1"><img src="./다운로드.png" alt=""> </div>
-                <div class="slide-img slide-img2"><img src="./1403894_20210415100724_025_0001.jpg" alt=""> </div>
-                <div class="slide-img slide-img3"><img src="./20210319_104641.png" alt=""> </div>
+                <div class="slide-img slide-img2"><img src="./545818852d96d0b6f2ecee144a58593c.jpg" alt=""> </div>
+                <div class="slide-img slide-img3"><img src="./daangn.png" alt=""> </div>
             </div>
         </div>
         
@@ -68,7 +73,9 @@
     </footer>
 
     <script>
-        var slideCount = $(".slide-img").length
+
+if (matchMedia("screen and (min-width: 1024px)").matches) { 
+    var slideCount = $(".slide-img").length
         var currentIndex = 0;
         var slidePosition;
 
@@ -81,6 +88,23 @@
             slidePosition = currentIndex * (-1200)+"px";
             $(".slide-bar").animate({left:slidePosition}, 1200);
         }, 4000);
+}else{
+    var slideCount = $(".slide-img").length
+        var currentIndex = 0;
+        var slidePosition;
+
+        setInterval(function() {
+            if(currentIndex < slideCount -1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            slidePosition = currentIndex * (-600)+"px";
+            $(".slide-bar").animate({left:slidePosition}, 1200);
+        }, 4000);
+} 
+
+
     </script>
 
    
